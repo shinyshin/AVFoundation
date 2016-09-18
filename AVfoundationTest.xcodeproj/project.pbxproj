@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		474C980C1D8D1D28009DBA99 /* gauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 474C980B1D8D1D27009DBA99 /* gauge.png */; };
+		474C980F1D8D1E38009DBA99 /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 474C980E1D8D1E38009DBA99 /* pointer.png */; };
 		476057CE1D8931B2005255AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476057CD1D8931B2005255AC /* AppDelegate.swift */; };
 		476057D01D8931B2005255AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476057CF1D8931B2005255AC /* ViewController.swift */; };
 		476057D31D8931B2005255AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476057D11D8931B2005255AC /* Main.storyboard */; };
 		476057D51D8931B2005255AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476057D41D8931B2005255AC /* Assets.xcassets */; };
 		476057D81D8931B2005255AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476057D61D8931B2005255AC /* LaunchScreen.storyboard */; };
+		476057E61D893871005255AC /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476057E51D893871005255AC /* AVKit.framework */; };
+		47927AB31D8BE4B6005214DD /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47927AB21D8BE4B6005214DD /* PlayVideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		474C980B1D8D1D27009DBA99 /* gauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gauge.png; sourceTree = "<group>"; };
+		474C980E1D8D1E38009DBA99 /* pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer.png; sourceTree = "<group>"; };
 		476057CA1D8931B2005255AC /* AVfoundationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVfoundationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		476057CD1D8931B2005255AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		476057CF1D8931B2005255AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		476057D41D8931B2005255AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		476057D71D8931B2005255AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		476057D91D8931B2005255AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476057E51D893871005255AC /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		47927AB21D8BE4B6005214DD /* PlayVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayVideoViewController.swift; path = ../PlayVideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,15 +37,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				476057E61D893871005255AC /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		474C980D1D8D1E2C009DBA99 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				474C980B1D8D1D27009DBA99 /* gauge.png */,
+				474C980E1D8D1E38009DBA99 /* pointer.png */,
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
 		476057C11D8931B2005255AC = {
 			isa = PBXGroup;
 			children = (
+				476057E51D893871005255AC /* AVKit.framework */,
 				476057CC1D8931B2005255AC /* AVfoundationTest */,
 				476057CB1D8931B2005255AC /* Products */,
 			);
@@ -54,9 +73,11 @@
 		476057CC1D8931B2005255AC /* AVfoundationTest */ = {
 			isa = PBXGroup;
 			children = (
+				474C980D1D8D1E2C009DBA99 /* res */,
 				476057CD1D8931B2005255AC /* AppDelegate.swift */,
 				476057CF1D8931B2005255AC /* ViewController.swift */,
 				476057D11D8931B2005255AC /* Main.storyboard */,
+				47927AB21D8BE4B6005214DD /* PlayVideoViewController.swift */,
 				476057D41D8931B2005255AC /* Assets.xcassets */,
 				476057D61D8931B2005255AC /* LaunchScreen.storyboard */,
 				476057D91D8931B2005255AC /* Info.plist */,
@@ -96,6 +117,7 @@
 				TargetAttributes = {
 					476057C91D8931B2005255AC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 932G9XG8AB;
 					};
 				};
 			};
@@ -123,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				476057D81D8931B2005255AC /* LaunchScreen.storyboard in Resources */,
+				474C980C1D8D1D28009DBA99 /* gauge.png in Resources */,
 				476057D51D8931B2005255AC /* Assets.xcassets in Resources */,
 				476057D31D8931B2005255AC /* Main.storyboard in Resources */,
+				474C980F1D8D1E38009DBA99 /* pointer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +161,7 @@
 			files = (
 				476057D01D8931B2005255AC /* ViewController.swift in Sources */,
 				476057CE1D8931B2005255AC /* AppDelegate.swift in Sources */,
+				47927AB31D8BE4B6005214DD /* PlayVideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AVfoundationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shin.AVfoundationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +288,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AVfoundationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shin.AVfoundationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +317,7 @@
 				476057DE1D8931B2005255AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
